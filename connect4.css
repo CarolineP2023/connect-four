@@ -1,0 +1,124 @@
+/* game board table */
+body {
+  background-color: rgba(227, 124, 124, 0.733);
+  
+}
+h1{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  font-family: monospace;
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+}
+#game {
+  position: relative; 
+  top: 90px; 
+  left: 500px;
+  background-color: rgba(101, 74, 148, 0.402);
+  width: 550px;
+  /* border-right: 30px rgb(36, 36, 84) solid;
+  border-left: 30px rgb(36, 36, 84) solid; */
+
+}
+#board td {
+  width: 70px;
+  height: 70px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  position: relative;
+  right: 7px;
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+.piece.p1 {
+background-color: rgba(255, 0, 0, 0.69);
+border: rgba(93, 5, 5, 0.658) solid 9px;
+}
+.piece.p2{
+background-color: rgba(0, 0, 255, 0.712);
+border: rgba(25, 25, 103, 0.707) solid 9px;
+}
+
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.cell{
+  position: relative;
+  left: 10px;
+  background-color: rgba(218, 209, 209, 0.812);
+  margin: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  
+}
+
+ 
+#container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+}
+
+#player1{
+  text-align: center;
+  position: relative;
+  width: 90px;
+  border: black 2px solid;
+  top: 20px;
+  right: 80px;
+}
+
+#player2{
+  text-align: center;
+  height: 20px;
+  width: 90px;
+  position: relative;
+  border: rgba(0, 0, 0, 0.737) 2px solid;
+  top: 20px;
+}
+
+.cell-top {
+  position: relative;
+  bottom: 3px;
+  left: 10px;
+  background-color: rgba(218, 209, 209, 0.812); 
+  height: 100px;
+  width: 100px;
+ 
+}
+
+.selected{
+  background-color: white;
+  
+}
+
+button{
+  height: 25px;
+  position: relative;
+  bottom: 30px;
+  left: 90px;
+  cursor: pointer;
+}
