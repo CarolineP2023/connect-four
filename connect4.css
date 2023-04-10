@@ -121,4 +121,5 @@ button{
   bottom: 30px;
   left: 90px;
   cursor: pointer;
+  background-color: none;
 }
